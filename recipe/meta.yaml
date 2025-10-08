@@ -13,10 +13,10 @@ source:
 
 build:
   number: 1
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
-  skip: true  # [not linux]
   missing_dso_whitelist:
     - '*/R.dll'        # [win]
     - '*/Rblas.dll'    # [win]
