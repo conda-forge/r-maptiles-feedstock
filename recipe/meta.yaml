@@ -32,7 +32,6 @@ requirements:
     - r-digest
     - r-png
     - r-sf
-    - r-slippymath
     - r-terra >=1.8_21
   run:
     - r-base
@@ -40,7 +39,6 @@ requirements:
     - r-digest
     - r-png
     - r-sf
-    - r-slippymath
     - r-terra >=1.8_21
 
 test:
