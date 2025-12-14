@@ -1,4 +1,4 @@
-{% set version = '0.10.0' %}
+{% set version = "0.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/maptiles_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/maptiles/maptiles_{{ version }}.tar.gz
-  sha256: 24282f2041a451010ac3fd5ba9e43dbc083702f2c1843985480d6ee8025adf5a
+  sha256: b346eb5efba4a851aba1a4f7068651455ed74ab172246e6816a35fff501f1e4a
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -32,7 +32,6 @@ requirements:
     - r-digest
     - r-png
     - r-sf
-    - r-slippymath
     - r-terra >=1.8_21
   run:
     - r-base
@@ -40,7 +39,6 @@ requirements:
     - r-digest
     - r-png
     - r-sf
-    - r-slippymath
     - r-terra >=1.8_21
 
 test:
@@ -51,9 +49,7 @@ test:
 about:
   home: https://github.com/riatelab/maptiles/
   license: GPL-3.0-only
-  summary: To create maps from tiles, 'maptiles' downloads, composes and displays tiles from
-    a large number of providers (e.g. 'OpenStreetMap', 'Stadia', 'Esri', 'CARTO', or
-    'Thunderforest').
+  summary: To create maps from tiles, 'maptiles' downloads, composes and displays tiles from a large number of providers (e.g. 'OpenStreetMap', 'Stadia', 'Esri', 'CARTO', or 'Thunderforest').
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
