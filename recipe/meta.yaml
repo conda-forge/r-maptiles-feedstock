@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/maptiles_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/maptiles/maptiles_{{ version }}.tar.gz
-  sha256: b346eb5efba4a851aba1a4f7068651455ed74ab172246e6816a35fff501f1e4a
+  sha256: 0a125a0a188115abb8fb9e5fc2eab50bbfee6fd0e6e26f7073331e9ca1dfc940
 
 build:
   number: 0
